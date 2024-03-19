@@ -20,9 +20,9 @@ global.DATABASE_URI = process.env.DATABASE_URL || ""
 
 global.timezone= process.env.TZ || process.env.TIME_ZONE || "Asia/Karachi";
 global.github=process.env.GITHUB|| "https://github.com/SuhailTechInfo/Suhail-Md";
-global.gurl  = process.env.GURL || "https://whatsapp.com/channel/0029Va9thusJP20yWxQ6N643";
-global.website= process.env.GURL|| "https://whatsapp.com/channel/0029Va9thusJP20yWxQ6N643" ; 
-global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://telegra.ph/file/d5b1c3544fedc23e11a06.jpg" ; // SET LOGO FOR IMAGE 
+global.gurl  = process.env.GURL || "https://whatsapp.com/channel/0029Va1qLxkDJ6H9u5cvlQ2m";
+global.website= process.env.GURL|| "https://chat.whatsapp.com/F8EVWAXr72hAsciEgN9oB2" ; 
+global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://telegra.ph/N1z4r---%E2%B5%A3-03-19" ; // SET LOGO FOR IMAGE 
 
 
 
@@ -36,12 +36,12 @@ global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]
 //========================= [ BOT SETTINGS ] =========================\\
 global.style = process.env.STYLE   || '5',  // put '1' to "5" here to check bot styles
 global.flush = process.env.FLUSH   || "false"; // Make it "true" if bot not responed
-global.gdbye = process.env.GOODBYE || "true"; 
-global.wlcm  = process.env.WELCOME || "true";  // Make it "false" for disable WELCOME 
+global.gdbye = process.env.GOODBYE || "false"; 
+global.wlcm  = process.env.WELCOME || "false";  // Make it "false" for disable WELCOME 
 
 global.warncount = process.env.WARN_COUNT || 3,
 global.disablepm = process.env.DISABLE_PM || "false", // disable bot in pm when public mode
-global.disablegroup = process.env.DISABLE_GROUPS || "false", // disable bot in groups when public mode
+global.disablegroup = process.env.DISABLE_GROUPS || "true", // disable bot in groups when public mode
 
 global.MsgsInLog = process.env.MSGS_IN_LOG|| "false", // "true"  to see messages , "log" to open logs , "false" to hide logs messages
 global.userImages= process.env.USER_IMAGES|| "text", // set IMAGE/VIDEO links here
@@ -55,7 +55,7 @@ global.readmessagefrom = process.env.READ_MESSAGE_FROM || "212691649677,923xxxxx
 
 
 //========================= [ AUTO SAVE & READ STATUS ] =========================\\
-global.read_status = process.env.AUTO_READ_STATUS || "false"
+global.read_status = process.env.AUTO_READ_STATUS || "true"
 global.save_status = process.env.AUTO_SAVE_STATUS || "false"
 global.save_status_from =  process.env.SAVE_STATUS_FROM  || "null,923xxxxxxxx";
 global.read_status_from =  process.env.READ_STATUS_FROM  ||  "212691649677,923xxxxxxxx";
@@ -95,7 +95,7 @@ module.exports = {
   aitts_Voice_Id : process.env.AITTS_ID || "37",
   ELEVENLAB_API_KEY: process.env.ELEVENLAB_API_KEY || "",
   WORKTYPE: process.env.WORKTYPE||process.env.MODE || "public",
-  LANG: process.env.THEME ? process.env.THEME.toUpperCase() : "SUHAIL",
+  LANG: process.env.THEME ? process.env.THEME.toUpperCase() : "N1z4r",
 
 
 
